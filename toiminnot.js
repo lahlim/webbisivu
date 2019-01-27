@@ -105,14 +105,12 @@ function laskeKa() {
 }
 
 /**
- * Tehdään table johon tulee joukkueiden sarjat nimet jäsenet pisteet aika matka.
- * Nimet on linkkejä ja ylä rivin mukaan voi sortata tablen.
  * @param {any} kurssit Taulukkoon tulevat joukkueet
  */
 function generate_table(kurssit) {
 
     let body = document.getElementById("taulukko");
-    let tbl = document.createElement("table");
+    //let tbl = document.createElement("table");
 
 
     tblBody = document.createElement("tbody");
@@ -176,97 +174,10 @@ function generate_table(kurssit) {
         row.appendChild(cell5);//pvm
         tblBody.appendChild(row);// solut riviin
     }
-    tbl.appendChild(tblBody);
-    body.appendChild(tbl);
-    // reunat
-
-    // Saadaan kilakattava teksti parametriksi otsikko riviltä
-    row.addEventListener('click', function (e) {
-        e = e || window.event;
-        var target = e.target || e.srcElement,
-            text = target.textContent || target.innerText;
-        jarjesta(text);
-    }, false);
+    body.appendChild(tblBody);
 }
 
-/**
- * Järjestetään taulukko ylärivin klikkauksen mukaan
- * @param {any} sarake teksti mitä riviltä on klikattu(solu)
- */
-function jarjesta(sarake) {
-    let kurssit = data;
-    let table = document.getElementsByTagName("table");
-    let taul = table[0];
-    if (sarake == "Koodi") {
-        kurssit.sort(compare);
-    }
-    if (sarake == "Nimi") {
-        kurssit.sort(compare2);
-    }
-    if (sarake == "Laajuus") {
-        kurssit.sort(compare3);
-    }
-    if (sarake == "Arvosana") {
-        kurssit.sort(compare4);
-    }
-    if (sarake == "Suoritettu") {
-        kurssit.sort(compare5);
-    }
-    
-    taul.remove();
-    generate_table(kurssit);
-}
 
-function compare(a, b) {
-    if (a.koodi > b.koodi)
-        return 1;
-    if (a.koodi < b.koodi)
-        return -1;
-    return 0;
-}
-
-function compare2(a, b) {
-    if (a.nimi > b.nimi)
-        return 1;
-    if (a.nimi < b.nimi)
-        return -1;
-    return 0;
-}
-
-function compare3(a, b) {
-    if (a.laajuus < b.laajuus)
-        return 1;
-    if (a.laajuus > b.laajuus)
-        return -1;
-    return 0;
-}
-
-function compare4(a, b) {
-    if (a.arvosana < b.arvosana)
-        return 1;
-    if (a.arvosana > b.arvosana)
-        return -1;
-    if (isNaN(a.arvosana))
-        return 1;
-    return 0;
-}
-
-function compare5(a, b) {
-    // pvm Date oliolle kelpaavaan muotoon
-    let eka = parsiPvm(a.pvm);
-    let toka = parsiPvm(b.pvm);
-    try {
-        var ekaDate = new Date(eka[2] + ","+ eka[1] + ","+eka[0]);
-        var tokaDate = new Date(toka[2] + "," + toka[1] + "," + toka[0]);
-    }
-    catch (e) {console.log("Päivämäärän käsittelyssä virhe:" + e)
-    }
-    if (ekaDate > tokaDate)
-        return 1;
-    if (ekaDate < tokaDate)
-        return -1;
-    return 0;
-}
 
 /**
  * Parsitaan päivämäärä taulukoksi jossa: pv kk ja vuosi
