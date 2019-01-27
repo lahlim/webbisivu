@@ -6,10 +6,13 @@ last modified: 3.1.2019 by author
 author: Lassi Mustonen
 website: http://users.jyu.fi/~lajumimu/lassi
 ----------------------------------------------------------*/
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     background: rgba(35,35,35,7);
     margin: 0;
+    font-size: 120%;
     color: #fff;
 
 }
@@ -63,6 +66,7 @@ hr {
     transition: all 1000ms;
     text-align: center;
     
+    
 }
 
 .content .profiili {
@@ -88,15 +92,25 @@ hr {
     max-width: 960px;
     margin:auto;
     overflow: hidden;
-    padding: 4rem 1rem;
+    padding: 4rem 1rem;   
 }
 
 .grid-4{
+    text-align: center;
     display: grid;
     grid-gap:25px;
     grid-template-columns: repeat(4,1fr);
+    
+}
+.grid-4 a{
+    color: #f4f4f4;
 }
 
+.grid-4 a:hover{
+    color: #4b92e4;
+    text-shadow: 1px 1px;
+    text-decoration: none;
+}
 .opinnot {
     padding:1em;
     background: #f4f4f4;
