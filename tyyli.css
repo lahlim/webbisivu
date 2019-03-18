@@ -2,7 +2,7 @@
 Style Sheet for http://users.jyu.fi/~lajumimu/lassi2.0
 
 version: 2.2
-last modified: 3.1.2019 by author
+last modified: 14.2.2019 by author
 author: Lassi Mustonen
 website: http://users.jyu.fi/~lajumimu/lassi
 ----------------------------------------------------------*/
@@ -12,7 +12,7 @@ html{
 body {
     background: rgba(35,35,35,7);
     margin: 0;
-    font-size: 120%;
+    font-size: 100%;
     color: #fff;
 
 }
@@ -30,7 +30,9 @@ hr {
     filter:blur(3px);
     -webkit-filter:blur(3px);
 }
-
+.showcase{
+    height: 100vh;
+}
 .showcase::after {
     content: "";
     height: 100vh;
@@ -56,22 +58,23 @@ hr {
 .content {
     position: absolute;
     z-index: 1;
-    top:10%;
+    top:5%;
     
-    margin-top: 25px;
+    margin-top: 20px;
     height:100%;
     
     height: 100px;
     width:100%;
     transition: all 1000ms;
     text-align: center;
+    text-shadow:  2px 2px #535353;
     
     
 }
 
 .content .profiili {
     transition: all 1500ms;
-    height: 450px;
+    height: 60vh;
     border: 0px solid rgb(255,255,255);
     border-radius: 20px;
     
@@ -112,7 +115,6 @@ hr {
     text-decoration: none;
 }
 .opinnot {
-    padding:1em;
     background: #f4f4f4;
     color: #333;
     text-align: center;
@@ -128,6 +130,7 @@ hr {
     padding:1em;
     text-align: center;  
 }
+
 
 .grid-2taul{
     display: flex;
@@ -157,6 +160,68 @@ hr {
     text-align: left;
     font-size: 2vh;
     
+}
+
+@media (max-width: 600px) {
+    .showcase::after {
+        height: 100vh;
+    }
+
+    .content .profiili{
+        padding-top: 0;
+        margin-top: 0;
+        height: 250px;
+    }
+
+    .content{
+        font-size:75%;
+    }
+    .data{
+        padding:0em;
+    }
+    table{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 800px) {
+    .showcase::after {
+        height: 100vh;
+    }
+
+    .content .profiili{
+
+        height: 300px;
+    }
+
+    .content{
+        font-size:80%;
+    }
+
+    table{
+        font-size: 55%;
+        border-collapse: collapse; 
+        
+    }
+    .grid-4{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+    .grid-2{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .graph{
+        display:none;
+    }
+}
+
+@media (max-width: 1200px){
+    .container2{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 

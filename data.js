@@ -197,5 +197,12 @@ var data = [
   	"laajuus": 3,
   	"arvosana": 5,
   	"pvm": "20.12.2018"
+	},
+	{
+	"koodi": "ITKY2100",
+	"nimi": "Sparrausta akateemiseen opiskeluun", 
+	"laajuus": 1,
+	"arvosana": "H",
+	"pvm": "06.03.2019"
 	}
 ];

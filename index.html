@@ -1,195 +1,198 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="toiminnot.js"></script>
-    <script src="data.js"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="toiminnot.js"></script>
+  <script src="data.js"></script>
 
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
-    <link href="tyyli.css" rel="StyleSheet" type="text/css" media="all" />
+  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="tyyli.css" rel="StyleSheet" type="text/css" media="all" />
 
 
-    <title>Lassi Mustonen</title>
+  <title>Lassi Mustonen</title>
 </head>
 
 <body>
-    <header class="showcase">
-        <div class="content">
-            <img src="profiilikuva.JPG" class="profiili" alt="Lassi">
-            <div class="title">
-                Lassi Mustonen
-            </div>
-            <div class="sub">
-                Tietotekniikan opiskelija
-            </div>
+  <header class="showcase">
+
+    <div class="content">
+      <img src="profiilikuva.JPG" class="profiili" alt="Lassi">
+      <div class="title">
+        Lassi Mustonen
+      </div>
+      <div class="sub">
+        Tietotekniikan opiskelija
+      </div>
+    </div>
+
+  </header>
+  <section class="sisalto">
+    <div class="container grid-4">
+      <div>
+        <a href="#opinnot">
+          <i class="fas fa-book-reader fa-5x"></i>
+          <h3>Opinnot</h3>
+        </a>
+      </div>
+      <div>
+        <a href="#projektit">
+          <i class="fas fa-code fa-5x"></i>
+          <h3>Projektit</h3>
+        </a>
+      </div>
+      <div>
+        <a href="#tyo">
+          <i class="fas fa-user-tie fa-5x"></i>
+          <h3>Työkokemus</h3>
+        </a>
+      </div>
+
+      <div>
+        <a href="mustonencv.pdf">
+          <i class="fas fa-portrait fa-5x"></i>
+          <h3>CV</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="opinnot" class="opinnot p-5">
+    <div class="grid-2">
+      <div class="center">
+        <i class="fas fa-book-reader fa-10x"></i>
+      </div>
+      <div>
+        <p>Olen tietotekniikan opiskelija Jyväskylän yliopistossa. Aloitin tutkinto-opiskelijana vuoden 2018
+          alussa ja
+          olen
+          suorittanut opintoja reippaaseen tahtiin. Tavoitteenani on ollut rakentaa riittävän tukeva pohja
+          työelämässä
+          harjoittelemista varten.</p>
+        <p>Useamman vuoden työkokemus ennen opintojen aloittamista on kasvattanut työmoraalia ja
+          vastuullisuutta.
+          Työkokemuksesta on ollut paljon apua opiskelutahdin ylläpitämisessä. Tämän lisäksi taustani
+          maajoukkuetason
+          urheilijana kumparelaskussa on jo nuoresta pitäen totuttanut työskentelemään pitkäjänteisesti ja
+          suunnitelmallisesti asetettujen tavoitteiden eteen.
+          Seuraava tavoitteeni on työskennellä vaativien ja opintoja tukevien asioiden parissa työelämässä.</p>
+
+        <p>Aloitin syksyllä 2017 opiskelemaan avoimessa yliopistossa it-tiedekunnan opintoja ja vuoden 2018
+          alussa
+          jatkoin tietotekniikan tutkinto-opiskelijana. Olen kiinnostunut kyberturvallisuudesta ja
+          kauppatieteistä.
+          Kauppatieteet aijon pitää sivuaineena ja kyberturvallisuuden koulutusohjelma on yksi
+          todennäköinen
+          vaihtoehto maisterivaiheeseen. </p>
+      </div>
+    </div>
+
+  </section>
+  <section class="data pt-5">
+    <div class="container2 grid-2">
+
+      <div class="graph">
+        <h2 class="mb-5">Opintokokonaisuudet</h2>
+        <canvas id="myChart"></canvas>
+        <p> Taulukosta voi seurata opintojeni etenemistä ja alle on laskettu muutamat avainluvut.</p>
+        <div id="tilasto"></div>
+        <p>Taulukon datana on käytetty <a href="data.js">tätä</a> tiedostoa ja taulukko luotu DOM
+          rajapinnan avulla <a href="toiminnot.js">JavaScriptilla.</a></p>
+      </div>
+      <div class="center">
+        <h2 class="mb-5">Kurssit</h2>
+        <div class="table-responsive">
+          <table class="table table-sm" id="taulukko"></table>
         </div>
-    </header>
-    <section class="sisalto">
-        <div class="container grid-4">
-            <div>
-                <a href="#opinnot">
-                <i class="fas fa-book-reader fa-5x"></i>
-                <h3>Opinnot</h3>
-            </a>
-            </div>
-            <div>
-                <a href="#projektit">
-                <i class="fas fa-code fa-5x"></i>
-                <h3>Projektit</h3>
-            </a>
-            </div>
-            <div>
-                <a href="#tyo">
-                <i class="fas fa-user-tie fa-5x"></i>
-                <h3>Työkokemus</h3>
-            </a>
-            </div>
+      </div>
+    </div>
+  </section>
 
-            <div>
-                <a href="mustonencv.pdf">
-                <i class="fas fa-portrait fa-5x"></i>
-                <h3>CV</h3>
-            </a>
-            </div>
+  <section id="projektit" class="projektit p-5">
+    <div class="container3 grid-2">
+      <div class="center">
+        <i class="fas fa-code fa-10x"></i>
+      </div>
+      <div>
+        <h3>Klikkaa ikonia, niin pääset GitHubiin katselemaan projektejani!</h3>
+
+        <div id="git">
+          <a href="https://github.com/lahlim/"><i class="fab fa-github fa-5x p-2"></i></a>
+          <p>Kevään 2019 aikana tavoitteenani on laajentaa portfoliota erityisesti <b>Reactia</b> käyttävillä
+            sovelluksilla.</p>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <section id="opinnot" class="opinnot p-5">
-        <div class="grid-2">
-            <div class="center">
-                <i class="fas fa-book-reader fa-10x"></i>
-            </div>
-            <div>
-                <p>Olen tietotekniikan opiskelija Jyväskylän yliopistossa. Aloitin tutkinto-opiskelijana vuoden 2018
-                    alussa ja
-                    olen
-                    suorittanut opintoja reippaaseen tahtiin. Tavoitteenani on ollut rakentaa riittävän tukeva pohja
-                    työelämässä
-                    harjoittelemista varten.</p>
-                <p>Useamman vuoden työkokemus ennen opintojen aloittamista on kasvattanut työmoraalia ja
-                    vastuullisuutta.
-                    Työkokemuksesta on ollut paljon apua opiskelutahdin ylläpitämisessä. Tämän lisäksi taustani
-                    maajoukkuetason
-                    urheilijana kumparelaskussa on jo nuoresta pitäen totuttanut työskentelemään pitkäjänteisesti ja
-                    suunnitelmallisesti asetettujen tavoitteiden eteen.
-                    Seuraava tavoitteeni on työskennellä vaativien ja opintoja tukevien asioiden parissa työelämässä.
+  </section>
 
-                    <p>Aloitin syksyllä 2017 opiskelemaan avoimessa yliopistossa it-tiedekunnan opintoja ja vuoden 2018
-                        alussa
-                        jatkoin tietotekniikan tutkinto-opiskelijana. Olen kiinnostunut kyberturvallisuudesta ja
-                        kauppatieteistä.
-                        Kauppatieteet aijon pitää sivuaineena ja kyberturvallisuuden koulutusohjelma on yksi
-                        todennäköinen
-                        vaihtoehto maisterivaiheeseen. </p>
-                    
-            </div>
-        </div>
+  <section id="tyo" class="tyo p-5">
+    <div class="container3 grid-2">
 
-    </section>
-    <section class="data p-5">
-        <div class="container2 grid-2">
+      <div class="text">
+        <h2>Työkokemus</h2>
+        <p>JVP asiakasturva Oy, Vartija
+          16.01.2017 – 25.8.2017, 08.04.2016 – 30.6.2016
+          Toimin Äänekoskella Biotuotetehdas työmaan vartijana. Työtehtävät koostuivat työturvallisuuden
+          valvomisesta, vierailijoiden opastuksista ja kulunvalvonnasta.
+        </p>
+        <p>
+          <hr>
+          Puolustusvoimat, Kouluttaja
+          01.07.2016 – 31.12.2016
+          Peruskoulutuskaudella toimin alokasjoukkueen varajohtajana ja siirryin suojausjoukkueen
+          kouluttajaksi
+          viimeisen neljän kuukauden ajaksi. Kouluttamisen lisäksi vastuullani oli joukkueiden hoitamiseen
+          liittyviä
+          hallinnollisia tehtäviä.
+        </p>
+        <hr>
+        <p>
+          Jyväskylän Hotellipalvelut Oy, Vastaanottovirkailija
+          01.06.2014 – 28.08.2014
+          Työnkuvaani kuului vastaanottovirkailijalle tyypillisiä tehtäviä, kuten asiakaspalvelu, laskutus,
+          varausjärjestelmän ylläpitäminen.
+        </p>
+        <hr>
+      </div>
+      <div class="center">
+        <i class="fas fa-user-tie fa-10x"></i>
+      </div>
+    </div>
+  </section>
 
-            <div class="graph">
-                <h2 class="mb-5">Opintokokonaisuudet</h2>
-                <canvas id="myChart"></canvas>
-                <p> Taulukosta voi seurata opintojeni etenemistä ja alle on laskettu muutamat avainluvut.</p>
-                    <div id="tilasto"></div>
-                    <p>Taulukon datana on käytetty <a href="data.js">tätä</a> tiedostoa ja taulukko luotu DOM
-                        rajapinnan avulla <a href="toiminnot.js">JavaScriptilla.</a></p>
-            </div>
-            <div class="center">
-                    <h2 class="mb-5">Kurssit</h2>
-                <table class="table table-striped mt-5" id="taulukko"></table>
-            </div>
-        </div>
-    </section>
+  <section id="adr" class="adr p-5">
+    <div class="container4 grid-2">
+      <div></div>
+      <div>
+        <h2>Yhteystiedot</h2>
+        <hr>
+        <address>
+          <div class="p-2">
+            <a href="mailto:lassi.j.m.mustonen@student.jyu.fi"><i class="far fa-envelope fa-3x"></i>
+              lassi.j.m.mustonen@student.jyu.fi</a><br>
+          </div>
+          <div class="p-2">
+            <i class="fas fa-phone fa-3x p-2"></i> 050 496 1366 <br>
+          </div>
+          <div class="p-2">
+            <a href="https://www.linkedin.com/in/lassi-mustonen/"><i class="fab fa-linkedin fa-3x p-2"></i></a>
+          </div>
+        </address>
+      </div>
 
-    <section id="projektit" class="projektit p-5">
-        <div class="container3 grid-2">
-            <div class="center">
-                <i class="fas fa-code fa-10x"></i>
-            </div>
-            <div>
-                <h3>Tähän ilmestyy sisältöä kevään aikana...</h3>
-                <p>Tulevat projektit ovat omia pieniä front-end sovelluksia, joiden tarkoituksena on rakentaa web-kehitystaitojani.</p>
-            </div>
-        </div>
+    </div>
+  </section>
 
-    </section>
-
-    <section id="tyo" class="tyo p-5">
-        <div class="container3 grid-2">
-
-            <div class="text">
-                <h2>Työkokemus</h2>
-                <p>JVP asiakasturva Oy, Vartija
-                    16.01.2017 – 25.8.2017, 08.04.2016 – 30.6.2016
-                    Toimin Äänekoskella Biotuotetehdas työmaan vartijana. Työtehtävät koostuivat työturvallisuuden
-                    valvomisesta, vierailijoiden opastuksista ja kulunvalvonnasta.
-                </p>
-                <p>
-                    <hr>
-                    Puolustusvoimat, Kouluttaja
-                    01.07.2016 – 31.12.2016
-                    Peruskoulutuskaudella toimin alokasjoukkueen varajohtajana ja siirryin suojausjoukkueen
-                    kouluttajaksi
-                    viimeisen neljän kuukauden ajaksi. Kouluttamisen lisäksi vastuullani oli joukkueiden hoitamiseen
-                    liittyviä
-                    hallinnollisia tehtäviä.
-                </p>
-                <hr>
-                <p>
-                    Jyväskylän Hotellipalvelut Oy, Vastaanottovirkailija
-                    01.06.2014 – 28.08.2014
-                    Työnkuvaani kuului vastaanottovirkailijalle tyypillisiä tehtäviä, kuten asiakaspalvelu, laskutus,
-                    varausjärjestelmän ylläpitäminen.
-                </p>
-                <hr>
-            </div>
-            <div class="center">
-                <i class="fas fa-user-tie fa-10x"></i>
-            </div>
-        </div>
-    </section>
-
-    <section id="adr" class="adr p-5">
-        <div class="container4 grid-2">
-            <div></div>
-            <div>
-                <h2>Yhteystiedot</h2>
-                <hr>
-                <address>
-                    <div class="p-2">
-                        <a href="mailto:lassi.j.m.mustonen@student.jyu.fi"><i class="far fa-envelope fa-3x"></i>
-                            lassi.j.m.mustonen@student.jyu.fi</a><br>
-                    </div>
-                    <div class="p-2">
-                        <i class="fas fa-phone fa-3x p-2"></i> 050 496 1366 <br>
-                    </div>
-                    <div class="p-2">
-                        <a href="https://www.linkedin.com/in/lassi-mustonen/"><i class="fab fa-linkedin fa-3x p-2"></i></a>
-                    </div>
-                </address>
-            </div>
-
-        </div>
-    </section>
-
-
-
-
-
-
-
-    <a name="container"></a>
-    <a name="container3"></a>
+  <a name="container"></a>
+  <a name="container3"></a>
 
 
 </body>
