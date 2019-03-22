@@ -13,19 +13,18 @@ window.onload = function () {
 }
 function grafiikkaa(op) {
     var ctx = document.getElementById('myChart').getContext('2d');
-    let maisteri = op / 300 * 100;
-    let kandi = op / 180 * 100;
+    let maisteri = Math.round(op / 300 * 100);
+    let kandi = Math.round(op / 180 * 100);
     var chart = new Chart(ctx, {
         // The type of chart we want to create
         type: 'bar',
-
         // The data for our dataset
         data: {
             labels: [
                 "Maisteri", "Kandi", "Tietotekniikan perusopinnot", "Tietjärjestelmätieteen perusopinnot",
                 "Liiketoimintaosaamisen perusopinnot",],
             datasets: [{
-                label: "Opintokokonaisuuksien vaiheet prosentteina",
+                label: "Opintokokonaisuuksien valmistuminen prosentteina",
                 backgroundColor: 'rgb(255, 255, 255,0.8)',
                 borderColor: 'rgb(255, 255, 255)',
                 data: [maisteri, kandi, 100, 16/25*100, 20/25*100,0],
@@ -41,12 +40,12 @@ function grafiikkaa(op) {
 
 function paivitaTilastot(op, ka, kaOp, kurssimaara) {
     let tilasto = document.getElementById("tilasto");
-    let p = document.createElement("p");
+    let p = document.createElement("h5");
     let br = document.createElement("br");
     let br2 = document.createElement("br");
 
     // Opinto piste maara
-    let maara = document.createTextNode("Opintopisteitä: "+op);
+    let maara = document.createTextNode("Opintopisteitä: "+op+" / 300");
     p.appendChild(maara);
     p.appendChild(br);
     tilasto.appendChild(p);
