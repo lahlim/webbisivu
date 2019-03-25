@@ -211,5 +211,12 @@ var data = [
         "laajuus": 5,
         "arvosana": 4,
         "pvm": "07.03.2019"
+    },
+    {
+        "koodi": "ITKA204",
+        "nimi": "Tietokannat ja tiedonhallinnan perusteet",
+        "laajuus": 5,
+        "arvosana": 3,
+        "pvm": "13.03.2019"
     }
 ];

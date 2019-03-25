@@ -8,13 +8,14 @@ website: http://users.jyu.fi/~lajumimu/lassi
 ----------------------------------------------------------*/
 html{
     scroll-behavior: smooth;
+    
 }
 body {
     background: rgba(35,35,35,7);
     margin: 0;
     font-size: 100%;
     color: #fff;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 hr {
