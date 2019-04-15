@@ -21,13 +21,13 @@ function grafiikkaa(op) {
         // The data for our dataset
         data: {
             labels: [
-                "Maisteri", "Kandi", "Tietotekniikan perusopinnot", "Tietjärjestelmätieteen perusopinnot",
+                "Maisteri", "Kandi", "Tietotekniikan perusopinnot", "Tietojärjestelmätieteen perusopinnot",
                 "Liiketoimintaosaamisen perusopinnot",],
             datasets: [{
                 label: "Opintokokonaisuuksien valmistuminen prosentteina",
                 backgroundColor: 'rgb(255, 255, 255,0.8)',
                 borderColor: 'rgb(255, 255, 255)',
-                data: [maisteri, kandi, 100, 16/25*100, 20/25*100,0],
+                data: [maisteri, kandi, 100, 100, 20 / 25 * 100, 0],
             }]
         },
 
@@ -45,7 +45,7 @@ function paivitaTilastot(op, ka, kaOp, kurssimaara) {
     let br2 = document.createElement("br");
 
     // Opinto piste maara
-    let maara = document.createTextNode("Opintopisteitä: "+op+" / 300");
+    let maara = document.createTextNode("Opintopisteitä: " + op + " / 300");
     p.appendChild(maara);
     p.appendChild(br);
     tilasto.appendChild(p);
@@ -83,7 +83,7 @@ function laskeKaperOp() {
 function laskeOpMaara() {
     let maara = 0;
     for (let i in data) {
-          maara = maara + data[i].laajuus;
+        maara = maara + data[i].laajuus;
     }
     return maara;
 }
@@ -98,7 +98,7 @@ function laskeKa() {
         if (!isNaN(data[i].arvosana)) {
             laskuri = laskuri + data[i].arvosana;
             eiH++;
-        } 
+        }
     }
     return Math.round(laskuri / eiH * 100) / 100;
 }
