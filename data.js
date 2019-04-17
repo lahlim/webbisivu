@@ -227,6 +227,13 @@ var data = [
     pvm: '13.03.2019'
   },
   {
+    koodi: 'TIE0293',
+    nimi: 'Tekoäly',
+    laajuus: 1,
+    arvosana: 5,
+    pvm: '31.03.2019'
+  },
+  {
     koodi: 'TIEP1000',
     nimi: 'Tietotekniikan ajankohtaisia teemoja',
     laajuus: 2,
