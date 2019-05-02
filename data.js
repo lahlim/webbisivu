@@ -239,5 +239,26 @@ var data = [
     laajuus: 2,
     arvosana: 'H',
     pvm: '09.04.2019'
+  },
+  {
+    koodi: 'TIEP1020',
+    nimi: 'Diskreetit rakenteet',
+    laajuus: 5,
+    arvosana: 2,
+    pvm: '12.04.2019'
+  },
+  {
+    koodi: 'XRUI903',
+    nimi: 'Svenska för datatekniker/muntlig',
+    laajuus: 1,
+    arvosana: 'TT',
+    pvm: '24.04.2019'
+  },
+  {
+    koodi: 'XRUI003',
+    nimi: 'Svenska för datatekniker/skriftlig',
+    laajuus: 1,
+    arvosana: 'TT',
+    pvm: '24.04.2019'
   }
 ];

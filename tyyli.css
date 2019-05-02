@@ -6,224 +6,213 @@ last modified: 14.2.2019 by author
 author: Lassi Mustonen
 website: http://users.jyu.fi/~lajumimu/lassi
 ----------------------------------------------------------*/
-html{
-    scroll-behavior: smooth;
-    
+html {
+  scroll-behavior: smooth;
 }
 body {
-    background: rgba(35,35,35,7);
-    margin: 0;
-    font-size: 100%;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
+  background: rgba(35, 35, 35, 7);
+  margin: 0;
+  font-size: 100%;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #fff;
-    margin: 1em 0;
-    padding: 0; 
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.tilasto {
+  color: #333;
 }
 
 .showcase:hover .content {
-    filter:blur(3px);
-    -webkit-filter:blur(3px);
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
 }
-.showcase{
-    height: 100vh;
+.showcase {
+  height: 100vh;
 }
 .showcase::after {
-    content: "";
-    height: 100vh;
-    width: 100%;
-    background-image: url(books.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    filter: blur(5px);
-    -webkit-filter:blur(5px);
-    transition: all 1500ms;
+  content: '';
+  height: 100vh;
+  width: 100%;
+  background-image: url(books.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  transition: all 1500ms;
 }
 
 .showcase:hover::after {
-    filter:blur(0px);
+  filter: blur(0px);
 }
 
 .showcase .content:hover {
-    filter:blur(0px);
+  filter: blur(0px);
 }
 
 .content {
-    position: absolute;
-    z-index: 1;
-    top:5%;
-    
-    margin-top: 20px;
-    height:100%;
-    
-    height: 100px;
-    width:100%;
-    transition: all 1000ms;
-    text-align: center;
-    text-shadow:  2px 2px #535353;
-    
-    
+  position: absolute;
+  z-index: 1;
+  top: 5%;
+
+  margin-top: 20px;
+  height: 100%;
+
+  height: 100px;
+  width: 100%;
+  transition: all 1000ms;
+  text-align: center;
+  text-shadow: 2px 2px #535353;
 }
 
 .content .profiili {
-    transition: all 1500ms;
-    height: 60vh;
-    border: 0px solid rgb(255,255,255);
-    border-radius: 20px;
-    
-    
+  transition: all 1500ms;
+  height: 60vh;
+  border: 0px solid rgb(255, 255, 255);
+  border-radius: 20px;
 }
 
 .content .title {
-    font-size: 2.5em;
-    margin-top: 1em;
+  font-size: 2.5em;
+  margin-top: 1em;
 }
 
 .content .sub {
-    font-size: 1.8em;
-    margin-top: 1em;
+  font-size: 1.8em;
+  margin-top: 1em;
 }
 
-.container{
-    max-width: 960px;
-    margin:auto;
-    overflow: hidden;
-    padding: 4rem 1rem;   
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem 1rem;
 }
 
-.grid-4{
-    text-align: center;
-    display: grid;
-    grid-gap:25px;
-    grid-template-columns: repeat(4,1fr);
-    
+.grid-4 {
+  text-align: center;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
 }
-.grid-4 a{
-    color: #f4f4f4;
+.grid-4 a {
+  color: #f4f4f4;
 }
 
-.grid-4 a:hover{
-    color: #4b92e4;
-    text-shadow: 1px 1px;
-    text-decoration: none;
+.grid-4 a:hover {
+  color: #4b92e4;
+  text-shadow: 1px 1px;
+  text-decoration: none;
 }
 .opinnot {
-    background: #f4f4f4;
-    color: #333;
-    text-align: center;
+  background: #f4f4f4;
+  color: #333;
+  text-align: center;
 }
 
-.grid-2{
-    display: grid;
-    grid-gap:25px;
-    grid-template-columns: repeat(2,1fr);
+.grid-2 {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.data{
-    padding:1em;
-    text-align: center;  
+.data {
+  padding: 1em;
+  text-align: center;
 }
 
-
-.grid-2taul{
-    display: flex;
-    flex-flow:row;
-    grid-gap:0px;
-    grid-template-columns: repeat(2,1fr);
+.grid-2taul {
+  display: flex;
+  flex-flow: row;
+  grid-gap: 0px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.projektit{
-    padding:1em;
-    background: #f4f4f4;
-    color: #333;
-    text-align: center;  
+.projektit {
+  padding: 1em;
+  background: #f4f4f4;
+  color: #333;
+  text-align: center;
 }
 
-.tyo{
-    padding:1em;
-    background:  #333;
-    color: #f4f4f4;
-    text-align: center;  
+.tyo {
+  padding: 1em;
+  background: #333;
+  color: #f4f4f4;
+  text-align: center;
 }
 
-.adr{
-    padding:0em;
-    background: #f4f4f4;
-    color: #333;
-    text-align: left;
-    font-size: 2vh;
-    
+.adr {
+  padding: 0em;
+  background: #f4f4f4;
+  color: #333;
+  text-align: left;
+  font-size: 2vh;
 }
 
 @media (max-width: 600px) {
-    .showcase::after {
-        height: 100vh;
-    }
+  .showcase::after {
+    height: 100vh;
+  }
 
-    .content .profiili{
-        padding-top: 0;
-        margin-top: 0;
-        height: 250px;
-    }
+  .content .profiili {
+    padding-top: 0;
+    margin-top: 0;
+    height: 250px;
+  }
 
-    .content{
-        font-size:75%;
-    }
-    .data{
-        padding:0em;
-    }
-    table{
-        font-size: 55%;
-    }
+  .content {
+    font-size: 75%;
+  }
+  .data {
+    padding: 0em;
+  }
+  table {
+    font-size: 55%;
+  }
 }
 
 @media (max-width: 800px) {
-    .showcase::after {
-        height: 100vh;
-    }
+  .showcase::after {
+    height: 100vh;
+  }
 
-    .content .profiili{
+  .content .profiili {
+    height: 300px;
+  }
 
-        height: 300px;
-    }
+  .content {
+    font-size: 80%;
+  }
 
-    .content{
-        font-size:80%;
-    }
+  table {
+    font-size: 55%;
+    border-collapse: collapse;
+  }
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    table{
-        font-size: 55%;
-        border-collapse: collapse; 
-        
-    }
-    .grid-4{
-        grid-template-columns: repeat(2,1fr);
+  .grid-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-    }
-
-    .grid-2{
-        grid-template-columns: repeat(1,1fr);
-
-    }
-
-    .graph{
-        display:none;
-    }
+  .graph {
+    display: none;
+  }
 }
 
-@media (max-width: 1200px){
-    .container2{
-        grid-template-columns: repeat(1,1fr);
-    }
+@media (max-width: 1200px) {
+  .container2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
-
-
-
